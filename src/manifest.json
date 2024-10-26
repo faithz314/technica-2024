@@ -1,0 +1,21 @@
+{
+    "testId": "465204a6-68ec-4679-8224-5677281f48a4",
+    "name": "Image Reader",
+    "version": "1.0.0",
+    "manifestVersion": 2,
+    "requirements": {
+        "apps": [
+            {
+                "name": "Express",
+                "apiVersion": 1
+            }
+        ]
+    },
+    "entryPoints": [
+        {
+            "type": "panel",
+            "id": "panel1",
+            "main": "index.html"
+        }
+    ]
+}
