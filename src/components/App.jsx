@@ -10,7 +10,19 @@ import { Theme } from "@swc-react/theme";
 import React, { useState } from "react";
 import "./App.css";
 // import PhotoUploader from './Picture.jsx';
-import ImageUploader from './ConvertHEIC.jsx';
+import ImageUploader from './ConvertHEICToBMP.jsx';
+// import convertBMPToSVG from './Potrace.jsx';
+
+
+
+// import { Upload } from "antd";
+
+
+
+
+
+
+
 
 
 const App = ({ addOnUISdk }) => {
@@ -19,6 +31,7 @@ const App = ({ addOnUISdk }) => {
     function handleClick() {
         setButtonLabel("Clicked");
     }
+
 
     return (
         // Please note that the below "<Theme>" component does not react to theme changes in Express.
@@ -30,12 +43,11 @@ const App = ({ addOnUISdk }) => {
                 </Button> */}
                 <h1> vectorfi</h1>
 
+                {/* <MyComponent></MyComponent> */}
 
-                
-                {/* <PhotoUploader></PhotoUploader> */}
                 <ImageUploader></ImageUploader>
 
-
+                
 
 
             </div>
