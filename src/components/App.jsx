@@ -9,7 +9,9 @@ import { Button } from "@swc-react/button";
 import { Theme } from "@swc-react/theme";
 import React, { useState } from "react";
 import "./App.css";
-import PhotoUploader from './Picture.jsx';
+// import PhotoUploader from './Picture.jsx';
+import ImageUploader from './ConvertHEIC.jsx';
+
 
 const App = ({ addOnUISdk }) => {
     const [buttonLabel, setButtonLabel] = useState("Click me");
@@ -30,7 +32,8 @@ const App = ({ addOnUISdk }) => {
 
 
                 
-                <PhotoUploader></PhotoUploader>
+                {/* <PhotoUploader></PhotoUploader> */}
+                <ImageUploader></ImageUploader>
 
 
 
