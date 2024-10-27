@@ -9,6 +9,7 @@ import { Button } from "@swc-react/button";
 import { Theme } from "@swc-react/theme";
 import React, { useState } from "react";
 import "./App.css";
+import PhotoUploader from './Picture.jsx';
 
 const App = ({ addOnUISdk }) => {
     const [buttonLabel, setButtonLabel] = useState("Click me");
@@ -22,9 +23,18 @@ const App = ({ addOnUISdk }) => {
         // You may use "addOnUISdk.app.ui.theme" to get the current theme and react accordingly.
         <Theme theme="express" scale="medium" color="light">
             <div className="container">
-                <Button size="m" onClick={handleClick}>
+                {/* <Button size="m" onClick={handleClick}>
                     {buttonLabel}
-                </Button>
+                </Button> */}
+                <h1> vectorfi</h1>
+
+
+                
+                <PhotoUploader></PhotoUploader>
+
+
+
+
             </div>
         </Theme>
     );
